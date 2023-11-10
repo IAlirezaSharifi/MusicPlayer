@@ -1,0 +1,92 @@
+/* CSS Start */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #399fff;
+  width: 100vw;
+  height: 100vh;
+  border: 0.3em solid #055317;
+  border-radius: 1em;
+  display: flex;
+}
+
+/* Container */
+
+.player-container {
+  display: flex;
+  position: absolute;
+  height: 45vh;
+  width: 35vh;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  border-radius: 1em;
+  transition: 0.3s;
+}
+
+.player-container:hover {
+  box-shadow: 0 0 50px #0075e3;
+}
+
+#thumbnail {
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  position: absolute;
+  height: 45%;
+  width: 100%;
+  background: #055317;
+  z-index: 4;
+  bottom: -10%;
+  display: grid;
+  grid-template-areas:
+    "one two two three"
+    "four four four four"
+    "five five five five";
+  column-gap: 10px;
+}
+
+.play-pause {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fa-pause-circle {
+  cursor: pointer;
+}
+
+#play {
+  color: #fff;
+  cursor: pointer;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#track-artist {
+  color: #0075e3;
+  font-weight: bold;
+}
+
+.progress-bar {
+  grid-area: four;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS End - ASH: AlirezaSharifi */

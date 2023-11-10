@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>MusicPlayer - AlirezaSharifi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="outer-container">
+      <audio src="./Musics/Themoons - Daramet.mp3" id="track"></audio>
+    </div>
+
+    <div class="player-container">
+      <img
+        src="./Images/Themoons - Daramet.jpg"
+        alt="TheMoons - Daramet"
+        id="thumbnail"
+      />
+
+      <div class="box">
+        <div class="play-pause">
+          <i class="far fa-play-circle fa-3x" id="play"></i>
+          <i class="far fa-pause-circle fa-3x" id="pause"></i>
+        </div>
+        <div class="track-info">
+          <div id="track-artist">Daramet</div>
+          <div id="track-title">TheMoons</div>
+        </div>
+
+        <div class="progress-bar">
+          <input type="range" id="progressBar" min="0" max="" value="0" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
